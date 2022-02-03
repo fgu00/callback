@@ -5,7 +5,12 @@ var jquerry=require("jquery");
 var sf=require("fs");
 const { ServerResponse, request } = require("http");
 console.log("funziona");
-
+var login=$.ajax("foryback.html").done(function(){
+    alert("success");
+})
+.fail(function(){
+    alert("error");
+})
 function login(){
     const xhttp = new XMLHttpRequest();
      xhttp.onload=function(){
